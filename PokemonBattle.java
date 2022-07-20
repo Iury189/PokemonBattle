@@ -7,7 +7,7 @@ public class PokemonBattle {
         Battle battle = new Battle();
         battle.basePokemons();
         battle.statusBattle();
-       
+        
     }
     
 }

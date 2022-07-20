@@ -6,10 +6,12 @@ public class Battle {
     Pikachu pikachu = new Pikachu();
     Alakazam alakazam = new Alakazam();
     Random random = new Random();
-    // Pokemons presentation
+    
     public void basePokemons(){
+       pikachu.setStatsPikachu();
        pikachu.pikachuBaseStats();
        System.out.println("");
+       alakazam.setStatsAlakazam();
        alakazam.alakazamBaseStats();
        System.out.println("");
     }
@@ -19,18 +21,19 @@ public class Battle {
         switch(winner){
             // Pikachu win, Alakam lost
             case 1:
-                pikachu.setWin(true);
-                alakazam.setKo(true);
+                pikachu.win = true;
+                alakazam.ko = true;
                 pikachu.pikachuWinner();
                 alakazam.alakazamDefeated();
                 break;
             // Alakazan wim, Pikachu lost
             case 2:
-                alakazam.setWin(true);
-                pikachu.setKo(true);
+                alakazam.win = true;
+                pikachu.ko = true;
                 alakazam.alakazamWinner();
                 pikachu.pikachuDefeated();
                 break;
         }
     }
+    
 }
