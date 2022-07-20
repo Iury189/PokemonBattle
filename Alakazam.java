@@ -12,11 +12,11 @@ public class Alakazam extends Pokemon {
        this.speed = 120;
        this.ko = false;
        this.win = false;
+       this.total = this.hp + this.attack + this.defense +
+       this.special_attack + this.special_defense + this.speed;
     }
     
     public void alakazamBaseStats(){
-        int total = this.hp + this.attack + this.defense +
-        this.special_attack + this.special_defense + this.speed;
         System.out.println("Name: Alakazam");
         System.out.println("Type: " + this.type);
         System.out.println("Attack: " + this.attack);
@@ -24,7 +24,7 @@ public class Alakazam extends Pokemon {
         System.out.println("Special Attack: " + this.special_attack);
         System.out.println("Special Defense: " + this.special_defense);
         System.out.println("Speed: " + this.speed);
-        System.out.println("Total: " + total);
+        System.out.println("Total: " + this.total);
     }
    
     public void alakazamWinner(){

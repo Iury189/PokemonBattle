@@ -11,5 +11,6 @@ public class Pokemon {
     protected int speed;
     protected boolean ko;
     protected boolean win;
+    protected int total;
   
 }
