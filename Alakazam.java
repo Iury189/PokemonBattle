@@ -2,12 +2,6 @@ package pokemonbattle;
 
 public class Alakazam extends Pokemon {
 
-    public Alakazam() {
-        
-    }
-    
-    
-    
     public void setStatsAlakazam() {
        this.type = "Psychic";
        this.hp = 55;

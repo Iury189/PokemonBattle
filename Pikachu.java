@@ -3,7 +3,7 @@ package pokemonbattle;
 public class Pikachu extends Pokemon {
     
     public void setStatsPikachu() {
-       type = "Electric";
+       this.type = "Electric";
        this.hp = 35;
        this.attack = 50;
        this.defense = 40;
